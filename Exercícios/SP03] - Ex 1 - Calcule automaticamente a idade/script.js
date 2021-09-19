@@ -8,8 +8,8 @@ que faça o cálculo da idade do usuário, e então exiba a idade em um texto na
     function calcIdade(){
     nascimento = document.getElementById('data').value
     diaNasc = +new Date(nascimento)
-    idade = ~~((Date.now() - diaNasc) / (31557600000))
-    document.getElementById('idade').innerHTML = 'Sua idade é: ' + idade + ' anos!'
+    idade = ~~((Date.now() - diaNasc) / (31557600000)) //duplo ~ pega o valor inteiro.
+    document.getElementById('resposta').innerHTML = 'Sua idade é: ' + idade + ' anos!'
     return idade
 }
 
