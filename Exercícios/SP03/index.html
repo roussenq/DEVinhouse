@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <script src="script.js" defer></script>
     <title>SP03-EX1 - Calcular Idade</title>
 </head>
+
 <body>
     <h1>Semana 03</h1>
     <h2>Exercício 01: Calcular Idade</h2>
@@ -16,6 +18,21 @@
     <button id="btnCalc" onclick="calcIdade()">calcular idade</button>
     <p id="resposta" onchange=""></p>
     <hr>
-    <h2>Exercício 02: Calcular Idade</h2>
+    <h2>Exercício 02: Calculadora</h2>
+    <label for="n1">Valor 1:</label>
+    <input type="number" name="n1" id="n1">
+    <label for="n2">Valor 2:</label>
+    <input type="number" name="n2" id="n2">
+    <p>Operação
+        <button type="button" onclick="somar()" id="adicao">+</button>
+        <button type="button" onclick="diminuir()" id="subtracao">-</button>
+        <button type="button" onclick="dividir()" id="divisao">/</button>
+        <button type="button" onclick="multiplicar()" id="multiplicacao">*</button>
+    </p>
+    <label for="resultado">Resultado</label>
+    <input type="text" readonly='true' name="resultado" id="resultado">
+    <hr>
+
 </body>
+
 </html>
