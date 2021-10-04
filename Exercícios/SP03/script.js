@@ -84,11 +84,16 @@ function horaAtual2() {
 
 setInterval(horaAtual2, 1000)
 
-// Exercício 6
+/* 
+[SP03] - Ex 6 - Informe a estação do ano no dia de acesso
+
+Sua página deve conter um texto e uma imagem, ambos representando a estação. Ao carregar a página, baseado na data atual, seu código deve verificar qual a estação atual do ano no hemisfério sul, e deve alterar o texto e a imagem, para que passem a representar a estação correta. Considere: 22/12 a 21/03 - Verão; 22/03 a 21/06 - Outono; 22/06 a 21/09 - Inverno; 22/09 a 21/12 - Primavera.
+*/
+
 
 function getEstacao() {
-    mes = new Date().getMonth()
-    dia = new Date().getDay()
+    var mes = new Date().getMonth()
+    var dia = new Date().getDay()
 
     img_estacao = document.getElementById('img-estacao')
     estacao_atual = document.getElementById('estacao')
@@ -101,7 +106,9 @@ function getEstacao() {
 
 getEstacao()
 
-// Exercício 7
+/*
+[SP03] - Ex 7 - Faça uma página de “lista de mercado”
+Sua página deve possibilitar ao usuário inserir itens em uma lista e exibir a lista atualizada a medida que forem sendo adicionados novos itens. A página deve conter um rótulo (<label>) “Item a adicionar:” seguido de um campo de texto onde o usuário possa digitar o item. Deve conter também um botão “Adicionar”, que no momento do clique do usuário deve inserir o item digitado na lista. Se o texto estiver vazio (length), deve mostrar uma mensagem ao usuário solicitando a inserção de algum texto. A página também deve conter uma lista (<select>), que exibirá os itens adicionados pelo usuário.*/
 
 function addItem() {
 
@@ -124,7 +131,13 @@ function addItem() {
 
 }
 
-// Exercícios 8 e 9
+/*
+[SP03] - Ex 8 - Salve a lista de mercado
+Utilizando a mesma página do exercício anterior, adicione um novo botão “Salvar lista”. Quando o usuário clicar nesse botão, a lista de itens de mercado deve ser salva no Local Storage do navegador.
+
+[SP03] - Ex 9 - Carregue uma lista salva anteriormente
+Utilizando a mesma página dos 2 exercícios anteriores ( [SP03] - Ex 7 e [SP03] - Ex 8 ), crie um novo botão “Carregar lista”, que ao ser clicado deve buscar no Local Storage se existe uma lista de itens de mercado salva, e em caso positivo deve mostrar os itens no elemento da página. Caso não haja nenhuma lista previamente salva, deve informar o usuário “Não há itens salvos”.
+*/
 
 function addItem2() {
 
@@ -167,7 +180,11 @@ function loadStorage() {
 
 }
 
-// Exercício 10
+/*
+[SP03] - Ex 10 - Construa uma “calculadora” de P.A. e P.G
+
+Na página HTML devem existir 2 campos de texto (dica: input type number): um rotulado (label) “valor inicial”, e outro rotulado “raíz”. Também deve ter 2 botões: um rotulado “Calcular P.A.” e outro rotulado “Calcular P.G.”. O evento click de cada botão deve chamar uma função que: verifica se os campos estão preenchidos (dica: length) e, se estiverem vazios, deve mostrar uma mensagem ao usuário pedindo para inserir os valores; caso os campos estejam preenchidos, deve calcular os 10 primeiros valores da sequência e exibir na tela. Relembrando: P.A. (Progressão Aritmética) é uma sequência numérica em que cada termo, a partir do segundo, é igual à soma do termo anterior com a raiz. Exemplo: Valor inicial = 1; raiz = 3; P.A. = 1, 4, 7, 10, 13, 16, 19, 22, 25, 28. P.G. (Progressão Geométrica) é como uma P.A., mas em vez de somar, multiplica-se a raiz. Exemplo: Valor inicial = 1; raiz = 3; P.G. = 1, 3, 9, 27, 81...
+*/
 
 function calcularPA() {
     var pa = document.getElementById('inputValor').value
