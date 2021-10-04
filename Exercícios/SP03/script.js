@@ -9,7 +9,7 @@ function calcIdade() {
     nascimento = document.getElementById('data').value
     diaNasc = +new Date(nascimento)
     idade = ~~((Date.now() - diaNasc) / (31557600000)) //duplo ~ pega o valor inteiro.
-    document.getElementById('resposta').innerHTML = 'Sua idade é: ' + idade + ' anos!'
+    document.getElementById('resposta1').innerHTML = 'Sua idade é: ' + idade + ' anos!'
     return idade
 }
 
@@ -42,4 +42,18 @@ function dividir() {
     n2 = parseInt(document.getElementById('n2').value)
 
     document.getElementById('resultado').value = n1 / n2
+}
+
+/*Exercício 03
+Em uma página HTML, insira um campo de texto para que o usuário insira um número. 
+Programe uma função em JavaScript para verificar se o número inserido pelo usuário é par ou ímpar, 
+e informe o usuário através de um texto na página HTML.*/
+
+function verificaParOuImpar() {
+    var numero = Number(document.getElementById('txtpar').value)
+    if (numero % 2 ==0) {
+        document.getElementById('resposta3').innerHTML = 'É Par!'
+    } else {
+        document.getElementById('resposta3').innerHTML = 'É Impar!'
+    }
 }

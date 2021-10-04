@@ -1,8 +1,25 @@
 body {
-    text-align: center;
     background-color: #006bb7;
+    font: 15pt normal Arial;
+}
+
+header {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-   
+    text-align: center;
+}
+
+section {
+    background: white;
+    width: 600px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+    border-radius: 20px;
     
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
 }

@@ -7,32 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>SP03-EX1 - Calcular Idade</title>
+    <title>SP03 - Exercícios</title>
 </head>
 
 <body>
-    <h1>Semana 03</h1>
-    <h2>Exercício 01: Calcular Idade</h2>
-    <label for="data">Insira sua data de nascimento: </label>
-    <input type="date" name="data" id="data">
-    <button id="btnCalc" onclick="calcIdade()">calcular idade</button>
-    <p id="resposta" onchange=""></p>
-    <hr>
-    <h2>Exercício 02: Calculadora</h2>
-    <label for="n1">Valor 1:</label>
-    <input type="number" name="n1" id="n1">
-    <label for="n2">Valor 2:</label>
-    <input type="number" name="n2" id="n2">
-    <p>Operação
-        <button type="button" onclick="somar()" id="adicao">+</button>
-        <button type="button" onclick="diminuir()" id="subtracao">-</button>
-        <button type="button" onclick="dividir()" id="divisao">/</button>
-        <button type="button" onclick="multiplicar()" id="multiplicacao">*</button>
-    </p>
-    <label for="resultado">Resultado</label>
-    <input type="text" readonly='true' name="resultado" id="resultado">
-    <hr>
-
+    <header>
+        <h1>Semana 03 - Execícios</h1>
+        <hr>
+    </header>
+    <section>
+        <div>
+            <p>Exercício 01: Calcular Idade</p>
+            <label for="data">Insira sua data de nascimento: </label>
+            <input type="date" name="data" id="data">
+            <button id="btnCalc" onclick="calcIdade()">calcular idade</button>
+            <p id="resposta1" onchange=""></p>
+            <hr>
+            <p>Exercício 02: Calculadora</p>
+            <label for="n1">Valor 1:</label>
+            <input type="number" name="n1" id="n1">
+            <label for="n2">Valor 2:</label>
+            <input type="number" name="n2" id="n2">
+            <p>Operação
+                <button type="button" onclick="somar()" id="adicao">+</button>
+                <button type="button" onclick="diminuir()" id="subtracao">-</button>
+                <button type="button" onclick="dividir()" id="divisao">/</button>
+                <button type="button" onclick="multiplicar()" id="multiplicacao">*</button>
+            </p>
+            <label for="resultado">Resultado</label>
+            <input type="text" readonly='true' name="resultado" id="resultado">
+            <hr>
+            <p>Exercício 03: é par?</p>
+            <label for="n1">Insira um número:</label>
+            <input type="number" name="txtpar" id="txtpar">
+            <button id="btnPar" onclick="verificaParOuImpar()">Verificar</button>
+            <p id="resposta3" onchange=""></p>
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy;David Roussenq Maria</p>
+    </footer>
 </body>
 
 </html>
