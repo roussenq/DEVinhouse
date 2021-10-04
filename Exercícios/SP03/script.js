@@ -71,17 +71,18 @@ function relogio() {
 
 relogio()
 
+/* [SP03] - Ex 5 - Faça um relógio que atualize automaticamente
+   
+Construa uma página HTML contendo um texto que informa o horário atual, no formato “23:59”, e que atualize automaticamente o valor, sempre que mudar o horário.
+*/
 
-
-// Exercícios 5
-
-function getTime2() {
-    horas = new Date().getHours()
-    minutos = new Date().getMinutes()
-    document.getElementById('time2').innerHTML = "Horário: " + horas + ":" + (minutos < 10 ? '0' : '') + minutos
+function horaAtual2() {
+    var horas = new Date().getHours()
+    var minutos = new Date().getMinutes()
+    document.getElementById('horaAtual2').innerHTML = "Horário: " + horas + ":" + (minutos < 10 ? '0' : '') + minutos
 }
 
-setInterval(getTime2, 1000)
+setInterval(horaAtual2, 1000)
 
 // Exercício 6
 
